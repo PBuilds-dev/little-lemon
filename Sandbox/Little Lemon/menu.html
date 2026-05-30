@@ -1,18 +1,3 @@
-<!---
-
-INSERT <div class="menu-category"> before the menu-grid !!!!!!!!!!
-ALSO ADD IMAGES FOR EACH DISH IN THE IMAGES FOLDER 
-AND LINK THEM PROPERLY IN THE HTML. 
-MAKE SURE TO INCLUDE ALLERGEN INFORMATION AND PRICES FOR EACH DISH.
-THEN STYLE IT
-THEN YOU NEED TO WORK ON THE HOVER OVER THE ITEMS AND THEN
-IT SHOWS THE DESC AND ALLERGENS
-HIDE THOSE BOTH AND THEN SHOW THEM ON HOVER
-FIND PHOTOS ON PINTEREST OR UNSPLASH
-UPLOAD AND UPDATE FILES ON GITHUB
-PUBLISH ON GITHUB PAGES ONCE DONE
-DEADLINE: MAY 30, 2026
--->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +7,7 @@ DEADLINE: MAY 30, 2026
     <title>Little Lemon Menu</title>
     <link rel="stylesheet" href="menu.css">
 </head>
-<body>
+<body id="top">
     <header class="site-header">
         <div><img src="./images/logo1.png" alt="Little Lemon Logo" class="main-logo"></div>
     </header>
@@ -50,17 +35,17 @@ DEADLINE: MAY 30, 2026
                     <input type="text" class="search-input" placeholder="Search for dishes or drinks...">
                     <button type="submit" class="search-button">Search</button>
                 </div>
-        <nav class="sticky-nav">
+    </section>
+    <nav class="sticky-nav">
             <ul class="sticky-nav-list">
-                <a href="#italian"><li>Italian</li></a>
-                <a href="#greek"><li>Greek</li></a>
-                <a href="#turkish"><li>Turkish</li></a>
-                <a href="#american"><li>American</li></a>
-                <a href="#drinks"><li>Drinks</li></a>
-                <a href="#specials"><li>Specials</li></a>
+                <li><a href="#italian">Italian</a></li>
+                <li><a href="#greek">Greek</a></li>
+                <li><a href="#turkish">Turkish</a></li>
+                <li><a href="#american">American</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#specials">Specials</a></li>
             </ul>
         </nav>
-    </section>
     
     <main class="menu-page">
             <section class="cuisine-section" id="italian">
@@ -83,20 +68,20 @@ DEADLINE: MAY 30, 2026
                                     </article>
                                     <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/caprese-salad.jpg" alt="Caprese Salad" width="200px" height="150px">
+                                                <img src="images/calamari.jpg" alt="Calamari Fritti" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Calamari Fritti</p>
                                                     <p class="menu-item-description">Lightly fried calamari served with lemon aioli and marinara sauce.</p>
                                                 <div class="menu-item-footer">
                                                     <p class="menu-item-price">$13</p>
-                                                    <p class="menu-item-allergens">Contains • Gluten</p>
+                                                    <p class="menu-item-allergens">Contains Gluten</p>
                                                 </div>
                                             </div>
                                     </article>
                                     <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/arancini.jpg" alt="Arancini" width="200px" height="150px">
+                                                <img src="images/burrata-caprese.jpg" alt="Burrata Caprese" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Burrata Caprese</p>
@@ -114,7 +99,7 @@ DEADLINE: MAY 30, 2026
                             <div class="menu-grid">
                                     <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                                                <img src="images/truffle mushroom ristotto.jpg" alt="Truffle Mushroom Risotto" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Truffle Mushroom Risotto</p>
@@ -127,7 +112,7 @@ DEADLINE: MAY 30, 2026
                                     </article>
                                     <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/eggplant-parmesan.jpg" alt="Eggplant Parmesan" width="200px" height="150px">
+                                                <img src="images/chicken alfredo linguine.jpg" alt="Chicken Alfredo Linguine" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Chicken Alfredo Linguine</p>
@@ -140,7 +125,7 @@ DEADLINE: MAY 30, 2026
                                     </article>
                                     <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/chicken-parmesan.jpg" alt="Chicken Parmesan" width="200px" height="150px">
+                                                <img src="images/seafood arrabbiata.jpg" alt="Seafood Arrabbiata" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Seafood Arrabbiata</p>
@@ -171,7 +156,7 @@ DEADLINE: MAY 30, 2026
                             </article>
                             <article class="menu-item-card">
                                     <div class="menu-item-image">
-                                        <img src="images/panna-cotta.jpg" alt="Panna Cotta" width="200px" height="150px">
+                                        <img src="images/lemon ricotta cheesecake.jpg" alt="Lemon Ricotta Cheesecake" width="200px" height="150px">
                                     </div>
                                     <div class="menu-item-details">
                                         <p class="menu-item-title">Lemon Ricotta Cheesecake</p>
@@ -193,7 +178,7 @@ DEADLINE: MAY 30, 2026
                                     <div class="menu-grid">
                                         <article class="menu-item-card">
                                                 <div class="menu-item-image">
-                                                    <img src="images/greek-salad.jpg" alt="Greek Salad" width="200px" height="150px">
+                                                    <img src="images/spanakopita.jpg" alt="Spanakopita" width="200px" height="150px">
                                                 </div>
                                                 <div class="menu-item-details">
                                                         <p class="menu-item-title">Spanakopita</p>
@@ -206,7 +191,7 @@ DEADLINE: MAY 30, 2026
                                         </article>
                                             <article class="menu-item-card">
                                                 <div class="menu-item-image">
-                                                    <img src="images/moussaka.jpg" alt="Moussaka" width="200px" height="150px">
+                                                    <img src="images/greek mezze plate.jpg" alt="Greek Mezze Plate" width="200px" height="150px">
                                                 </div>
                                                 <div class="menu-item-details">
                                                         <p class="menu-item-title">Greek Mezze Plate</p>
@@ -219,7 +204,7 @@ DEADLINE: MAY 30, 2026
                                             </article>
                                             <article class="menu-item-card">
                                                 <div class="menu-item-image">
-                                                    <img src="images/gyro.jpg" alt="Gyro Platter" width="200px" height="150px">
+                                                    <img src="images/grilled halloumi.jpg" alt="Grilled Halloumi" width="200px" height="150px">
                                                 </div>
                                                 <div class="menu-item-details">
                                                         <p class="menu-item-title">Grilled Halloumi</p>
@@ -237,7 +222,7 @@ DEADLINE: MAY 30, 2026
                                 <div class="menu-grid">
                                         <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                                                <img src="images/chicken souvlaki.jpg" alt="Chicken Souvlaki" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Chicken Souvlaki</p>
@@ -250,7 +235,7 @@ DEADLINE: MAY 30, 2026
                                         </article>
                                         <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/eggplant-parmesan.jpg" alt="Eggplant Parmesan" width="200px" height="150px">
+                                                <img src="images/lamb gyro plate.jpg" alt="Lamb Gyro Plate" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Lamb Gyro Plate</p>
@@ -263,7 +248,7 @@ DEADLINE: MAY 30, 2026
                                         </article>
                                         <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/chicken-parmesan.jpg" alt="Chicken Parmesan" width="200px" height="150px">
+                                                <img src="images/med moussaka.jpg" alt="Mediterranean Moussaka" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Mediterranean Moussaka</p>
@@ -281,7 +266,7 @@ DEADLINE: MAY 30, 2026
                             <div class="menu-grid">
                                     <article class="menu-item-card">
                                         <div class="menu-item-image">
-                                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                                            <img src="images/baklava.jpg" alt="Baklava" width="200px" height="150px">
                                         </div>
                                         <div class="menu-item-details">
                                                 <p class="menu-item-title">Baklava</p>
@@ -294,7 +279,7 @@ DEADLINE: MAY 30, 2026
                                     </article>
                                     <article class="menu-item-card">
                                         <div class="menu-item-image">
-                                            <img src="images/eggplant-parmesan.jpg" alt="Eggplant Parmesan" width="200px" height="150px">
+                                            <img src="images/greek yogurt parfait.jpg" alt="Greek Yogurt Parfait" width="200px" height="150px">
                                         </div>
                                         <div class="menu-item-details">
                                                 <p class="menu-item-title">Greek Yogurt Parfait</p>
@@ -309,14 +294,14 @@ DEADLINE: MAY 30, 2026
                     </div>
                 </div>
             </section>
-            <section class="cuisine-section" id="turskish">
+            <section class="cuisine-section" id="turkish">
                 <h2>Turkish Specials</h2>
                     <div class="menu-category">
                             <h3>Appetizers</h3>
                                 <div class="menu-grid">
                                         <article class="menu-item-card"> 
                                             <div class="menu-item-image">
-                                                <img src="images/bruschetta.jpg" alt="Bruschetta" width="200px" height="150px">
+                                                <img src="images/turkish lentil soup.jpg" alt="Turkish Lentil Soup" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Turkish Lentil Soup</p>
@@ -329,7 +314,7 @@ DEADLINE: MAY 30, 2026
                                         </article>
                                         <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/caprese-salad.jpg" alt="Caprese Salad" width="200px" height="150px">
+                                                <img src="images/sigara boregi.jpg" alt="Sigara Böreği" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Sigara Böreği</p>
@@ -342,7 +327,7 @@ DEADLINE: MAY 30, 2026
                                         </article>
                                         <article class="menu-item-card">
                                             <div class="menu-item-image">
-                                                <img src="images/arancini.jpg" alt="Arancini" width="200px" height="150px">
+                                                <img src="images/muhammara dip.jpg" alt="Muhammara Dip" width="200px" height="150px">
                                             </div>
                                             <div class="menu-item-details">
                                                     <p class="menu-item-title">Muhammara Dip</p>
@@ -360,7 +345,7 @@ DEADLINE: MAY 30, 2026
                             <div class="menu-grid">
                                     <article class="menu-item-card">
                                         <div class="menu-item-image">
-                                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                                            <img src="images/adana kebab.jpg" alt="Adana Kebab" width="200px" height="150px">
                                         </div>
                                         <div class="menu-item-details">
                                                 <p class="menu-item-title">Adana Kebab</p>
@@ -373,7 +358,7 @@ DEADLINE: MAY 30, 2026
                                     </article>
                                     <article class="menu-item-card">
                                         <div class="menu-item-image">
-                                            <img src="images/eggplant-parmesan.jpg" alt="Eggplant Parmesan" width="200px" height="150px">
+                                            <img src="images/iskender kebab.jpg" alt="Iskender Kebab" width="200px" height="150px">
                                         </div>
                                         <div class="menu-item-details">
                                                 <p class="menu-item-title">Iskender Kebab</p>
@@ -386,7 +371,7 @@ DEADLINE: MAY 30, 2026
                                     </article>
                                     <article class="menu-item-card">
                                         <div class="menu-item-image">
-                                            <img src="images/chicken-parmesan.jpg" alt="Chicken Parmesan" width="200px" height="150px">
+                                            <img src="images/chicken pide.jpg" alt="Chicken Pide" width="200px" height="150px">
                                         </div>
                                         <div class="menu-item-details">
                                                 <p class="menu-item-title">Chicken Pide</p>
@@ -404,7 +389,7 @@ DEADLINE: MAY 30, 2026
                         <div class="menu-grid">
                                 <article class="menu-item-card">
                                     <div class="menu-item-image">
-                                        <img src="images/tiramisu.jpg" alt="Tiramisu" width="200px" height="150px">
+                                        <img src="images/turkish delight trio.jpg" alt="Turkish Delight Trio" width="200px" height="150px">
                                     </div>
                                     <div class="menu-item-details">
                                             <p class="menu-item-title">Turkish Delight Trio</p>
@@ -417,7 +402,7 @@ DEADLINE: MAY 30, 2026
                                 </article>
                                 <article class="menu-item-card">
                                     <div class="menu-item-image">
-                                        <img src="images/panna-cotta.jpg" alt="Panna Cotta" width="200px" height="150px">
+                                        <img src="images/kunefe.jpg" alt="Kunefe" width="200px" height="150px">
                                     </div>
                                     <div class="menu-item-details">
                                             <p class="menu-item-title">Kunefe</p>
@@ -438,7 +423,7 @@ DEADLINE: MAY 30, 2026
                             <div class="menu-grid">
                                     <article class="menu-item-card">
                                         <div class="menu-item-image">
-                                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                                            <img src="images/wagyu smash burger.jpg" alt="Wagyu Smash Burger" width="200px" height="150px">
                                         </div>
                                         <div class="menu-item-details">
                                                 <p class="menu-item-title">Wagyu Smash Burger</p>
@@ -451,7 +436,7 @@ DEADLINE: MAY 30, 2026
                                     </article>
                                     <article class="menu-item-card">
                                         <div class="menu-item-image">
-                                            <img src="images/eggplant-parmesan.jpg" alt="Eggplant Parmesan" width="200px" height="150px">
+                                            <img src="images/buttermilk fried chicken.jpg" alt="Buttermilk Fried Chicken" width="200px" height="150px">
                                         </div>
                                         <div class="menu-item-details">
                                                 <p class="menu-item-title">Buttermilk Fried Chicken</p>
@@ -462,6 +447,18 @@ DEADLINE: MAY 30, 2026
                                             </div> 
                                         </div>
                                     </article>
+                                    <article class="menu-item-card">
+                                    <div class="menu-item-image">
+                                        <img src="images/smoky bbq.jpg" alt="Southern BBQ Brisket" width="200px" height="150px">
+                                    </div>
+                                    <div class="menu-item-details">
+                                        <p class="menu-item-title">Southern BBQ Brisket</p>
+                                        <p class="menu-item-description">Smoked beef brisket, sliced or chopped, with tangy sauce.</p>
+                                        <div class="menu-item-footer">
+                                            <p class="menu-item-price">$21</p>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
                     <div class="menu-category">
@@ -469,7 +466,7 @@ DEADLINE: MAY 30, 2026
                         <div class="menu-grid">
                                 <article class="menu-item-card">
                                     <div class="menu-item-image">
-                                        <img src="images/new-york-cheesecake.jpg" alt="New York Cheesecake" width="200px" height="150px">
+                                        <img src="images/ny cheesecake.jpg" alt="New York Cheesecake" width="200px" height="150px">
                                     </div>
                                     <div class="menu-item-details">
                                             <p class="menu-item-title">New York Cheesecake</p>
@@ -480,6 +477,32 @@ DEADLINE: MAY 30, 2026
                                         </div> 
                                     </div>
                                 </article>
+                                <article class="menu-item-card">
+                                <div class="menu-item-image">
+                                    <img src="images/boston cream pie.jpg" alt="Boston Cream Pie" width="200px" height="150px">
+                                </div>
+                                <div class="menu-item-details">
+                                    <p class="menu-item-title">Boston Cream Pie</p>
+                                    <p class="menu-item-description">Sponge cake with custard filling, chocolate glaze.</p>
+                                    <div class="menu-item-footer">
+                                        <p class="menu-item-price">$13</p>
+                                        <p class="menu-item-allergens">Contains Gluten • Contains Dairy</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="menu-item-image">
+                                    <img src="images/carrot cake.jpg" alt="Carrot Cake" width="200px" height="150px">
+                                </div>
+                                <div class="menu-item-details">
+                                    <p class="menu-item-title">Carrot Cake</p>
+                                    <p class="menu-item-description">Spiced cake with cream cheese frosting.</p>
+                                    <div class="menu-item-footer">
+                                        <p class="menu-item-price">$12</p>
+                                        <p class="menu-item-allergens">Contains Gluten • Contains Dairy</p>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                     </div>
             </section>
@@ -489,11 +512,11 @@ DEADLINE: MAY 30, 2026
                 <div class="menu-grid">
                     <article class="menu-item-card">
                         <div class="menu-item-image">
-                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                            <img src="images/Little Lemon Mint Cooler.jpg" alt="Little Lemon Mint Cooler" width="200px" height="150px">
                         </div>
                         <div class="menu-item-details">
-                            <h3>Little Lemon Mint Cooler</h3>
-                            <p>Fresh lemonade with mint and sparkling water.</p>
+                            <p class="menu-item-title">Little Lemon Mint Cooler</p>
+                            <p class="menu-item-description">Fresh lemonade with mint and sparkling water.</p>
                             <div class="menu-item-footer">
                                 <p class="menu-item-price">$7</p>
                             </div>
@@ -501,11 +524,11 @@ DEADLINE: MAY 30, 2026
                     </article>
                     <article class="menu-item-card">
                         <div class="menu-item-image">
-                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                            <img src="images/Mediterranean Sunset.jpg" alt="Mediterranean Sunset" width="200px" height="150px">
                         </div>
                         <div class="menu-item-details">
-                            <h3>Mediterranean Sunset</h3>
-                            <p>Orange, pomegranate, and soda with fresh citrus.</p>
+                            <p class="menu-item-title">Mediterranean Sunset</p>
+                            <p class="menu-item-description">Orange, pomegranate, and soda with fresh citrus.</p>
                             <div class="menu-item-footer">
                                 <p class="menu-item-price">$9</p>
                             </div>
@@ -513,25 +536,27 @@ DEADLINE: MAY 30, 2026
                     </article>
                     <article class="menu-item-card">
                         <div class="menu-item-image">
-                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                            <img src="images/Turkish Coffee.jpg" alt="Turkish Coffee" width="200px" height="150px">
                         </div>
                             <div class="menu-item-details">
-                                <h3>Turkish Coffee</h3>
-                                <p>Traditional slow-brewed Turkish coffee.</p>
+                                <p class="menu-item-title">Turkish Coffee</p>
+                                <p class="menu-item-description">Traditional slow-brewed Turkish coffee.</p>
                                 <div class="menu-item-footer">
                                     <p class="menu-item-price">$6</p>
+                                    <p class="menu-item-allergens">Contains Caffeine</p>
                                 </div>
                         </div>
                     </article>
                     <article class="menu-item-card">
                         <div class="menu-item-image">
-                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                            <img src="images/Iced Pistachio Latte.jpg" alt="Iced Pistachio Latte" width="200px" height="150px">
                         </div>
                         <div class="menu-item-details">
-                            <h3>Iced Pistachio Latte</h3>
-                            <p>Creamy espresso latte infused with pistachio syrup.</p>
+                            <p class="menu-item-title">Iced Pistachio Latte</p>
+                            <p class="menu-item-description">Creamy espresso latte infused with pistachio syrup.</p>
                             <div class="menu-item-footer">
                                 <p class="menu-item-price">$8</p>
+                                <p class="menu-item-allergens">Contains Nuts • Contains Dairy</p>
                             </div>
                         </div>
                     </article>
@@ -544,43 +569,47 @@ DEADLINE: MAY 30, 2026
                 <div class="menu-grid">
                     <article class="menu-item-card">
                         <div class="menu-item-image">
-                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                            <img src="images/Grilled Sea Bass.jpg" alt="Grilled Sea Bass" width="200px" height="150px">
                         </div>
                         <div class="menu-item-details">
-                            <h3>Grilled Sea Bass</h3>
-                            <p>Fresh sea bass with lemon herb butter and roasted vegetables.</p>
-                            <div class="item-menu-footer">
-                                <p class="menu-item-price">Market Price</p>
+                            <p class="menu-item-title">Grilled Sea Bass</p>
+                            <p class="menu-item-description">Fresh sea bass with lemon herb butter and roasted vegetables.</p>
+                            <div class="menu-item-footer">
+                                <p class="menu-item-price">$30</p>
+                                <p class="menu-item-allergens">Contains Fish • Contains Dairy</p>
                             </div>
                         </div>
                     </article>
                     <article class="menu-item-card">
                         <div class="menu-item-image">
-                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                            <img src="images/Summer Burrata Pasta.jpg" alt="Summer Burrata Pasta" width="200px" height="150px">
                         </div>
                         <div class="menu-item-details">
-                            <h3>Summer Burrata Pasta</h3>
-                            <p>Fresh cherry tomatoes, basil oil, and creamy burrata over handmade pasta.</p>
-                            <div class="item-menu-footer">
+                            <p class="menu-item-title">Summer Burrata Pasta</p>
+                            <p class="menu-item-description">Fresh cherry tomatoes, basil oil, and creamy burrata over handmade pasta.</p>
+                            <div class="menu-item-footer">
                                 <p class="menu-item-price">$26</p>
+                                <p class="menu-item-allergens">Contains Gluten • Contains Dairy</p>
                             </div>
                         </div>
                     </article>
                     <article class="menu-item-card">
                         <div class="menu-item-image">
-                            <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" width="200px" height="150px">
+                            <img src="images/Solstice Seafood Saganaki.jpg" alt="Solstice Seafood Saganaki" width="200px" height="150px">
                         </div>
                         <div class="menu-item-details">
-                            <h3>Solstice Seafood Saganaki</h3>
-                            <p>Seafood simmered in an aromatic tomato and ouzo sauce, finished with barrel-aged feta and fresh mint.</p>
-                            <div class="item-menu-footer">
+                            <p class="menu-item-title">Solstice Seafood Saganaki</p>
+                            <p class="menu-item-description">Seafood simmered in an aromatic tomato and ouzo sauce, finished with barrel-aged feta and fresh mint.</p>
+                            <div class="menu-item-footer">
                                 <p class="menu-item-price">$25</p>
+                                <p class="menu-item-allergens">Contains Gluten • Contains Dairy</p>
                             </div>
                         </div>
                     </article>
                 </div>
                 </div>
             </section>
+            <a href="#top" class="back-to-top">Top</a>
     </main> 
     <footer class="site-footer" id="footer">
         <div class="footer-logo">

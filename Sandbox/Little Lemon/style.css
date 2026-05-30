@@ -168,8 +168,16 @@ section {
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
-.info-card:hover .card-image {
+.info-card:hover img {
     transform: scale(1.05);
+}
+.info-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    background-color: #edefee;
+    transition: transform 0.3s ease;
 }
 .card-image {
     width: 100%;

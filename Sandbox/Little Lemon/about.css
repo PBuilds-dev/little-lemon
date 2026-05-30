@@ -28,6 +28,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+ul {
+    list-style: none;
+}
 section {
     margin-bottom: 2rem;
 }
@@ -51,6 +54,8 @@ section {
     justify-content: center;
     gap: 10rem;
     padding: 1rem 0;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 .nav-links a {
@@ -180,6 +185,25 @@ h2 {
 .footer-copy {
     color: #555555;
 }
+
+@media (max-width: 900px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .main-logo {
+        width: 220px;
+    }
+}
+
 
 @keyframes scrollGallery {
     0% {
